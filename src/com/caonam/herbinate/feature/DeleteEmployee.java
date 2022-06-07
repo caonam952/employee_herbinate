@@ -16,7 +16,7 @@ public class DeleteEmployee {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			int EmployeeId = 1;
+			int EmployeeId = 4;
 			
 			session = factory.getCurrentSession();
 			session.beginTransaction();
@@ -27,6 +27,7 @@ public class DeleteEmployee {
 			session.delete(ep1);
 			
 			session.getTransaction().commit();
+			System.out.println("done");
 		} finally {
 			
 		}
